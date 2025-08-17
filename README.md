@@ -32,7 +32,7 @@ My personal portfolio website showcasing my skills, experience, and projects as 
 
 
 ## 🔗 Live Demo
-[View Portfolio](https://your-deployment-link.com)
+👉 [View Portfolio](https://roy-portfolio-pied.vercel.app)
 
 ## 📄 License
 This project is licensed under the MIT License — see [LICENSE](./LICENSE).
