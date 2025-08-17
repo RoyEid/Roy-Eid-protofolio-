@@ -24,7 +24,12 @@ My personal portfolio website showcasing my skills, experience, and projects as 
 - **Contact** → Email, phone, LinkedIn.
 
 ## 📸 Screenshots
-_Add screenshots from `assets/screenshots/` here (desktop + mobile view)._
+### Desktop
+![Desktop Screenshot](assets/screenshots/desktop.png)
+
+### Mobile
+![Mobile Screenshot](assets/screenshots/mobile.png)
+
 
 ## 🔗 Live Demo
 [View Portfolio](https://your-deployment-link.com)
