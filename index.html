@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roy Eid — Portfolio</title>
+  <meta name="description" content="Portfolio of Roy Eid — Java Developer. Airline Management System and more." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header" role="banner">
+    <div class="container header__bar">
+      <a class="brand" href="#home">
+        <span class="brand__mark" aria-hidden="true">RE</span>
+        <span class="brand__text">Roy Eid</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#featured">Featured</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="theme" aria-label="Theme">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 1 0 21 12.79Z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="section hero" tabindex="-1">
+    <div class="container grid grid--2">
+      <div class="stack hero__copy">
+        <h1 class="title">Java Developer</h1>
+        <p class="lead">I build reliable desktop and database-driven apps with Java, JDBC and MySQL. Clean code, clear UX, and solid data models.</p>
+        <div class="row">
+          <a class="btn btn--primary" href="#featured">View Featured Project</a>
+          <a class="btn" href="resume.pdf" download>Download CV</a>
+          <a class="btn btn--ghost" href="mailto:royeid984@gmail.com">Email</a>
+        </div>
+
+        <ul class="facts">
+          <li>📍 Beirut, Lebanon</li>
+          <li>🔗 <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/royeid984">linkedin.com/in/royeid984</a></li>
+          <li>📞 <a href="tel:+96181987156">+961 81 987 156</a></li>
+        </ul>
+      </div>
+
+      <aside class="card hero__card">
+        <div class="initials" aria-hidden="true">RE</div>
+        <div class="meta">
+          <div class="meta__row"><span>Email</span><a href="mailto:royeid984@gmail.com">royeid984@gmail.com</a></div>
+          <div class="meta__row"><span>Phone</span><a href="tel:+96181987156">+961 81 987 156</a></div>
+          <div class="meta__row"><span>Languages</span><span>Arabic, French, English</span></div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- ===== Featured project ===== -->
+  <section id="featured" class="section section--alt">
+    <div class="container stack">
+      <header class="section__head">
+        <h2 class="section__title">Featured Project</h2>
+        <p class="muted">A single, clearly presented hero project with scope, tech and outcomes.</p>
+      </header>
+
+      <article class="grid grid--2 project project--featured">
+        <div class="stack">
+          <h3>Airline Management System</h3>
+          <p>End-to-end desktop app to manage <strong>aircrafts</strong>, <strong>airports</strong>, <strong>flights</strong>, <strong>passengers</strong>, <strong>reservations</strong> and <strong>payments</strong>. Designed on a normalized MySQL schema with clean Java + JDBC layers.</p>
+          <ul class="list">
+            <li>Role-ready entities and flight status handling.</li>
+            <li>Seat capacity and class breakdown per aircraft.</li>
+            <li>Reporting-ready (iTextPDF) & date pickers (JCalendar).</li>
+          </ul>
+          <div class="row">
+            <span class="chip">Java</span><span class="chip">Swing</span><span class="chip">JDBC</span><span class="chip">MySQL</span>
+          </div>
+          <!-- Put your repo/zip link here if you have one -->
+          <!-- <a class="btn" target="_blank" rel="noreferrer" href="https://github.com/<you>/airline-management-system">Source</a> -->
+        </div>
+
+        <figure class="frame">
+          <!-- Replace screenshot.png with a real image if you have it -->
+          <div class="frame__ph">Add <code>img/screenshot.png</code> here</div>
+        </figure>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="section">
+    <div class="container stack">
+      <header class="section__head">
+        <h2 class="section__title">Projects</h2>
+      </header>
+
+      <div class="grid grid--3">
+        <article class="card project">
+          <h3>Inventory / POS Prototype</h3>
+          <p class="muted">Compact Java + MySQL CRUD with reporting; built to be extended for real stores.</p>
+          <div class="row"><span class="chip">Java</span><span class="chip">MySQL</span></div>
+        </article>
+
+        <article class="card project">
+          <h3>Hotel Booking (JDBC)</h3>
+          <p class="muted">Room inventory, booking, billing with role-based access and clear models.</p>
+          <div class="row"><span class="chip">Java</span><span class="chip">JDBC</span><span class="chip">MySQL</span></div>
+        </article>
+
+        <article class="card project">
+          <h3>Supermarket OOP</h3>
+          <p class="muted">Well-structured classes and encapsulation to manage items, carts and receipts.</p>
+          <div class="row"><span class="chip">Java</span><span class="chip">OOP</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="section section--alt">
+    <div class="container stack">
+      <header class="section__head">
+        <h2 class="section__title">Skills</h2>
+      </header>
+
+      <div class="grid grid--3">
+        <div class="card stack">
+          <h3>Tech</h3>
+          <div class="row row--wrap">
+            <span class="chip">Java</span><span class="chip">OOP</span><span class="chip">JDBC</span><span class="chip">MySQL</span><span class="chip">Swing</span><span class="chip">Design Patterns</span>
+          </div>
+        </div>
+        <div class="card stack">
+          <h3>Professional</h3>
+          <div class="row row--wrap">
+            <span class="chip">Attention to Detail</span><span class="chip">Teamwork</span><span class="chip">Problem Solving</span><span class="chip">Time Management</span>
+          </div>
+        </div>
+        <div class="card stack">
+          <h3>Tools</h3>
+          <div class="row row--wrap">
+            <span class="chip">Git</span><span class="chip">phpMyAdmin</span><span class="chip">Eclipse/STS</span><span class="chip">iTextPDF</span><span class="chip">JCalendar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section id="experience" class="section">
+    <div class="container stack">
+      <header class="section__head">
+        <h2 class="section__title">Experience</h2>
+      </header>
+
+      <article class="card timeline">
+        <div class="timeline__item">
+          <div class="timeline__head">
+            <h3>CCTV Operator</h3>
+            <span class="muted">Patrick Security (On-site at HOLDAL Group) — 2023–Present</span>
+          </div>
+          <ul class="list">
+            <li>Monitor cameras, respond to alarms, coordinate with on-site teams.</li>
+            <li>Document incidents and maintain equipment reliably.</li>
+            <li>Maintain rigorous access control and safety standards.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section id="education" class="section section--alt">
+    <div class="container stack">
+      <header class="section__head">
+        <h2 class="section__title">Education</h2>
+      </header>
+
+      <div class="grid grid--2">
+        <article class="card stack">
+          <h3>B.Sc. Computer Engineering</h3>
+          <p class="muted">Lebanese International University — focus on Java/OOP, software architecture, database management.</p>
+        </article>
+        <article class="card stack">
+          <h3>Official Certificate in Sociology & Economy</h3>
+          <p class="muted">Lycée NDPS Saint Maxime</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section">
+    <div class="container stack">
+      <header class="section__head">
+        <h2 class="section__title">Contact</h2>
+      </header>
+
+      <article class="card contact">
+        <p><strong>Email:</strong> <a href="mailto:royeid984@gmail.com">royeid984@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+96181987156">+961 81 987 156</a></p>
+        <p><strong>LinkedIn:</strong> <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/royeid984">linkedin.com/in/royeid984</a></p>
+        <p class="muted">Tip: keep <code>resume.pdf</code> alongside this file so the CV download link stays fresh.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Roy Eid. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
